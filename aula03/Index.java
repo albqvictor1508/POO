@@ -1,7 +1,6 @@
 public class Index {
     public static void main(String[] args) {
         Index pessoa = new Index();
-
     System.out.println(pessoa.falarNomeCompleto("victor", "arruda"));
 
     System.out.println(pessoa.Calculadora(100, "/", 10));
