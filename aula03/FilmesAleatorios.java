@@ -2,7 +2,7 @@ public class FilmesAleatorios {
     public static void main(String[] args) {
         FilmesAleatorios filme = new FilmesAleatorios();
 
-        System.out.println(filme.acessaArray(filme.numeroAleatorio()));
+        System.out.println(filme.exibeFilme(filme.numeroAleatorio()));
     }
 
     public String[] FrasesDeFilme() {
@@ -13,12 +13,13 @@ public class FilmesAleatorios {
         "Eu voltarei. - O Exterminador do Futuro (1984)",
         "Não há lugar como o nosso lar. - O Mágico de Oz (1939)"
         };
+        
         return frases;   
     }
 
     public int numeroAleatorio() {
         String[] frases = this.FrasesDeFilme();
-        return ; 
+        return (int) (Math.random() * frases.length); 
     }
 
     public String exibeFilme(int numero) {
